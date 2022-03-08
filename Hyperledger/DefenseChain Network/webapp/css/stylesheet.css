@@ -1,0 +1,86 @@
+table.GeneratedTable {
+  width: 90%;
+  background-color: #ffffff;
+  border-collapse: collapse;
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  color: #000000;
+}
+
+table.GeneratedTable td, table.GeneratedTable th {
+  border-width: 2px;
+  border-color: #000000;
+  border-style: solid;
+  padding: 5px;
+}
+
+table.GeneratedTable thead {
+  background-color: #ffefad;
+}
+
+ul {
+    list-style-type: none;
+    padding: 10;
+    margin-left: 10%;
+    padding-bottom: 50px;
+    border: 3px normal gold;
+}
+
+li{
+    float: left;
+}
+
+li a {
+    display: block;
+    color: gold;
+    background-color: black;
+    text-align: center;
+    padding: 14px 16px;
+    margin-right: 50px;
+    text-decoration: none;
+    border: 3px solid gold;
+}
+
+li a:hover {
+    color: black;
+    background-color: gold;
+}
+
+
+a{
+    text-decoration: none;
+    color: gold;
+}
+
+button {
+    display: block;
+    margin: auto;
+}
+
+#TableDiv {
+    margin-top: 50px;
+}
+
+#FormDiv{
+    padding-top: 50px;
+    padding-bottom: 50px;
+    padding-left: 10%;
+    padding-right: 10%;
+    margin-left: 30%;
+    margin-right: 30%;
+    background-color: black;
+}
+
+.FormElement{
+    background-color: gold;
+    padding: 20px;
+    
+}
+
+#SubBtn {
+    display: block;
+    margin-top: 20px;
+    margin-left: auto;
+    margin-right: 0;
+}

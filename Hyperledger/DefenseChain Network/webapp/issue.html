@@ -1,0 +1,30 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>ClaimChain</title>
+    <link rel="stylesheet" href="css/stylesheet.css">
+</head>
+<body>
+    <div id="TitleDiv">
+        <ul>
+            <li><a href="approve">Approve</a></li>
+            <li><a href="issue">Issue</a></li>
+        </ul>
+    </div>
+    <div id="FormDiv">
+        <form action="/issued" method="post">
+            <div class = FormElement>
+                <label for="fname">Policy Number:</label><br>
+                <input type="text" id="PolicyNumber" name="PolicyNumber" value = "NL30238"><br>
+            </div>
+            <div class = FormElement>
+                <label for="lname">Damage Value:</label><br>
+                <input type="text" id="DamageValue" name="DamageValue">
+            </div>
+            <input id="SubBtn" type="submit" value="Submit">
+        </form>
+    </div>
+    
+</body>
+</html>
