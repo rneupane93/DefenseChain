@@ -27,7 +27,7 @@ Various components of DefenseChain include:
 3. User space (requesting and service providing peers.)
 4. [User Interface](./Hyperledger/DefenseChainNetwork/)
  
-The Dolus system is designed to perform mitigation techniques in the system.
+The Dolus system is designed to perform mitigation techniques in the system. This interfaces a backend system that is built using Laravel.
 
 Hyperledger network is built to depict inter- and intra-organizational network by making use of various Insurance Organization as participating peers.
 
@@ -51,6 +51,50 @@ The claimants use the form to enter important details relating to an accident or
 ## Blockchain Components
 Our system is built using a Blockchain network created using [Hyperledger Fabric](./Hyperledger/) with a sample of three insurance organizations. The smart contracts and related source codes are built using GO programming language. The contracts include issuance of claims, their approval and also the option to cancel a certain policy. The telemetry of this Blockchain network is collected by using [Hyperledger Explorer](./Hyperledger/explorer/). The information collected from the explorer can be helpful in statistically evaluating the performance of the Blockchain network. The necessary tools for initiating the network is explained [here](./Hyperledger/README.md). 
 
+To initialize the network, docker images to create the peers and databases (CouchDB) is required. The code is compiled using the GO programming language but also can be reconfigured to use other technologies such as javascript.
+
+Install curl
+```bash
+$ sudo apt install curl
+```
+Install Docker and Docker-ce
+```bash
+$ sudo apt-get -y install docker-compose
+$ sudo systemctl enable docker
+```
+Add your user to docker group:
+```bash
+$ sudo usermod -aG docker [YourUser]
+$ newgrp docker
+```
+Install Fabrics Docker Images and binary/config files
+*In / and /fabric-samples*:
+```bash
+$ curl -sSL https://bit.ly/2ysbOFE | bash -s -- -s
+```
+Install Go, ** do this if you would like to use Go
+Download Go for Linux at https://golang.org/dl/
+
+*In Download folder*:
+```bash
+$ tar -C /usr/local -xzf go1.17.1.linux-amd64.tar.gz
+```
+*Edit .bashrc in home directory and add lines*:
+```
+export GOPATH=$HOME/[YourPathToDefenseChain]
+export GOROOT=/usr/local/go
+export PATH=$PATH:$GOROOT/bin
+```
+*Write changes and restart startup file*:
+```bash
+$ source ~/.bashrc
+```
+Install nvm -> install nodejs, ** do this if you would like to use javascript
+```
+$ curl -o- https://raw.githubusercontent.com/nvm-sh/nvm/v0.38.0/install.sh | bash
+$ sudo nvm install 14.13.1
+$ sudo nvm use 14.13.1
+```
 
 
 ## Machine Learning Model
