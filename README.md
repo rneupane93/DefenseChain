@@ -1,13 +1,13 @@
 # Table of Contents 
-* [DefenseChain](https://github.com/rneupane93/DefenseChain/blob/main/README.md#)  
-* [DefenseChain Design](https://github.com/rneupane93/DefenseChain/blob/main/README.md##ontimeurb)
-  * [DefenseChain Components](https://github.com/rneupane93/DefenseChain/blob/main/README.md#optimizer-engine)  
-    * [Use Case](https://github.com/rneupane93/DefenseChain/blob/main/README.md#)
-    * [User Interface](https://github.com/rneupane93/DefenseChain/blob/main/README.md#)
-  * [Blockchain Components](https://github.com/rneupane93/DefenseChain/blob/main/README.md#)  
-  * [Machine Learning Component](https://github.com/rneupane93/DefenseChain/blob/main/README.md#machine-learning-model)
-    * [Datasets](https://github.com/rneupane93/DefenseChain/blob/main/README.md#machine-learning-model)
-* [Experimental Testbed](https://github.com/rneupane93/DefenseChain/blob/main/README.md#machine-learning-model)
+* [DefenseChain](#defensechain)  
+* [DefenseChain Design](#defensechain-design)
+  * [DefenseChain Components](#defensechain-components)  
+    * [Use Case](#insurance-claims-processing-use-case)
+    * [User Interface](#claims-app-user-interface)
+  * [Blockchain Components](#blockchain-components)  
+  * [Machine Learning Component](#machine-learning-model)
+    * [Datasets](#datasets)
+* [Experimental Testbed](#experimental-testbed)
  
 
 # DefenseChain 
@@ -34,12 +34,12 @@ Hyperledger network is built to depict inter- and intra-organizational network b
 The requesting and service providing peers communicate through the Blockchain network to engage in detection and mitigation for identified threats.
 
 The user interface fronts a form that enables users to enter their claim details for processing.
-### Insurance Claims Processing - a use case
+### Insurance Claims Processing Use Case
 Use case of insurance claims application is used that follows the design explained before. Users are able to file for insurance claims using a user interface explained later which communicates with the DefenseChain system in order to trigger claims related contracts such as approval and cancellation. 
 
 ![](Images/usecase.png)
 
- ### Claims App - User Interface
+ ### Claims App User Interface
  The Insurance claims processing application fronts a Claim form through which the users enter their insurance claims. The application is built on the Hyperledger composer that sits on the fabric network. Any action on the UI leads to an API call to the network for creation and approval of claims. The data is monitored for detection of fraudulent activities and other attacks such as Cryptojacking. The information collected is subject to triggering of different chaincodes and finally to detect fraudulent claims and attacks leverating our Machine Learning Model.
 
 ![](Images/ui.png)
